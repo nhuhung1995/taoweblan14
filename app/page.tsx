@@ -1,12 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Newspaper, Quote, ShieldCheck, Sparkles, Star, UserRoundCheck } from "lucide-react";
+import { ArrowRight, Newspaper, Quote, Sparkles } from "lucide-react";
 import CosmicHeroBackground from "@/components/CosmicHeroBackground";
 import SectionTitle from "@/components/SectionTitle";
 import FaqList from "@/components/FaqList";
+import ValuePillarsSection from "@/components/ValuePillarsSection";
 import { products } from "@/data/products";
 import { supportFaqs } from "@/data/support";
+import { valuePillars } from "@/data/valuePillars";
 
 const newsItems = [
   {
@@ -20,29 +22,6 @@ const newsItems = [
   {
     title: "Gợi ý theo nhu cầu thực tế",
     text: "Từ người mới sang Nhật đến gia đình cần internet ổn định lâu dài, mỗi nội dung đều hướng tới quyết định rõ ràng hơn.",
-  },
-];
-
-const whyUs = [
-  {
-    icon: UserRoundCheck,
-    title: "Tư vấn sát với nhu cầu",
-    text: "Chúng tôi lắng nghe thiết bị đang dùng, thời gian sử dụng, khu vực sinh sống và thói quen kết nối để đưa ra gợi ý phù hợp hơn.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Thông tin rõ ràng, dễ theo dõi",
-    text: "Mỗi nhóm dịch vụ được viết ngắn gọn, lịch sự và mạch lạc để Quý khách dễ so sánh trước khi liên hệ.",
-  },
-  {
-    icon: Sparkles,
-    title: "Trải nghiệm xem web ấm áp",
-    text: "Giao diện ưu tiên cảm giác gần gũi, sang trọng và dễ đọc để khách hàng muốn ở lại lâu hơn và tìm hiểu thêm.",
-  },
-  {
-    icon: Star,
-    title: "Hỗ trợ quyết định nhẹ nhàng hơn",
-    text: "Từ tham khảo sản phẩm, xem mức giá đến gửi yêu cầu liên hệ, toàn bộ hành trình đều hướng đến sự thuận tiện và dễ hiểu.",
   },
 ];
 
@@ -197,30 +176,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-[#f7eee6] text-[#2b1623]">
-        <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 lg:px-10">
-          <SectionTitle
-            eyebrow="Tại sao chọn chúng tôi"
-            title="Lý do nhiều khách hàng yêu thích cách hỗ trợ của Global Internet 5G"
-            desc="Chúng tôi ưu tiên cách trình bày dễ hiểu, thái độ lịch sự và gợi ý sát nhu cầu để Quý khách yên tâm hơn khi lựa chọn."
-            center
-          />
-          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {whyUs.map((item) => {
-              const Icon = item.icon;
-              return (
-                <div key={item.title} className="rounded-[30px] border border-[#eed3c2] bg-white/90 p-7 shadow-[0_22px_45px_rgba(92,43,30,0.08)]">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#fff0e4]">
-                    <Icon className="h-5 w-5 text-[#b46f55]" />
-                  </div>
-                  <h3 className="mt-5 text-2xl font-semibold text-[#2b1623]">{item.title}</h3>
-                  <p className="mt-3 leading-7 text-[#6f4f57]">{item.text}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
+      <ValuePillarsSection items={valuePillars} />
 
       <section className="relative overflow-hidden bg-[#180b17] text-white">
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.02),transparent_28%),radial-gradient(circle_at_30%_0%,rgba(255,155,88,0.12),transparent_18%),radial-gradient(circle_at_80%_70%,rgba(191,74,124,0.12),transparent_22%)]" />
