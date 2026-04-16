@@ -56,7 +56,6 @@ export default function SolutionsPage() {
             ))}
           </div>
           <div className="mt-10 flex flex-wrap gap-4">
-            <Link href="/pricing" className="rounded-full bg-[#ffe8d8] px-6 py-4 font-semibold text-[#2b1623]">Xem Pricing</Link>
             <Link href="/lien-he" className="rounded-full border border-white/20 bg-white/8 px-6 py-4 font-semibold text-white">Đi tới Liên hệ</Link>
           </div>
         </div>

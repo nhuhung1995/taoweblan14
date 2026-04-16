@@ -43,8 +43,8 @@ export default function ProductDetailTemplate({
         panelBullets={panelBullets}
         icon={icon}
         primaryHref="/lien-he"
-        secondaryHref="/pricing"
-        secondaryLabel="Xem bảng giá"
+        secondaryHref="/san-pham"
+        secondaryLabel="Xem sản phẩm"
       />
 
       <section className="bg-[#120913] text-white">

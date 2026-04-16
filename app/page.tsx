@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { ArrowRight, Newspaper, Quote, ShieldCheck, Sparkles, Star, UserRoundCheck } from "lucide-react";
+import CosmicHeroBackground from "@/components/CosmicHeroBackground";
 import SectionTitle from "@/components/SectionTitle";
 import FaqList from "@/components/FaqList";
 import { products } from "@/data/products";
@@ -94,26 +95,22 @@ const ctaFaqs = [supportFaqs[0], supportFaqs[1], supportFaqs[4]];
 export default function HomePage() {
   return (
     <main>
-      <section className="relative isolate overflow-hidden text-white">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/cosmic-hero-v7.png')" }} />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(26,8,17,0.30),rgba(26,8,17,0.62)_45%,rgba(18,9,19,0.96)_100%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_18%,rgba(255,191,120,0.26),transparent_20%),radial-gradient(circle_at_14%_18%,rgba(255,124,70,0.18),transparent_24%),radial-gradient(circle_at_88%_12%,rgba(255,168,99,0.22),transparent_20%)]" />
-
-        <div className="relative mx-auto max-w-7xl px-4 pb-20 pt-24 text-center md:px-8 lg:px-10 lg:pb-28 lg:pt-28">
-          <div className="mx-auto inline-flex items-center gap-2 rounded-full border border-white/15 bg-black/25 px-4 py-2 text-sm text-[#ffe0cc] shadow-[0_12px_34px_rgba(0,0,0,0.22)] backdrop-blur-md">
+      <section className="relative isolate overflow-hidden text-white min-h-[760px] lg:min-h-[820px]">
+        <CosmicHeroBackground />
+        <div className="relative mx-auto flex min-h-[760px] max-w-7xl flex-col items-center justify-center px-4 pb-24 pt-24 text-center md:px-8 lg:min-h-[820px] lg:px-10">
+          <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-black/25 px-4 py-2 text-sm text-[#ffe0cc] shadow-[0_12px_34px_rgba(0,0,0,0.22)] backdrop-blur-md">
             <Sparkles className="h-4 w-4" />
             Global Internet 5G · Kết nối viễn thông tại Nhật
           </div>
 
-          <h1 className="mx-auto mt-8 max-w-5xl text-5xl font-semibold leading-[1.03] md:text-7xl lg:text-[5.3rem]">
-            Global Internet 5G mang đến giải pháp internet tại Nhật với trải nghiệm
-            <span className="text-[#ffcfab]"> premium, rõ ràng, </span>
-            ấm áp và đáng tin cậy.
+          <h1 className="mx-auto mt-8 max-w-5xl text-5xl font-semibold leading-[1.03] md:text-7xl lg:text-[5.4rem]">
+            Kết nối internet tại Nhật theo cách
+            <span className="bg-[linear-gradient(135deg,#ffd39f,#ffb369,#fff0da)] bg-clip-text text-transparent"> ấm áp, rõ ràng </span>
+            và hiện đại hơn.
           </h1>
 
           <p className="mx-auto mt-7 max-w-3xl text-lg leading-8 text-white/84 md:text-xl">
-            Dù Quý khách đang tìm SIM vật lý, eSIM, Pocket WiFi, Home WiFi hay Hikari,
-            chúng tôi luôn ưu tiên cách giới thiệu dễ hiểu để việc lựa chọn dịch vụ trở nên nhanh hơn và nhẹ nhàng hơn.
+            Global Internet 5G mang đến giải pháp SIM vật lý, eSIM, Pocket WiFi, Home WiFi và Hikari với cách tư vấn lịch sự, dễ hiểu và phù hợp cho từng nhu cầu sử dụng thực tế tại Nhật.
           </p>
 
           <div className="mt-10 flex flex-wrap justify-center gap-4">
@@ -125,11 +122,23 @@ export default function HomePage() {
               <ArrowRight className="h-5 w-5" />
             </Link>
             <Link
-              href="/pricing"
+              href="/san-pham"
               className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-7 py-4 font-semibold text-white backdrop-blur transition hover:bg-white/16"
             >
-              Xem bảng giá
+              Xem sản phẩm
             </Link>
+          </div>
+
+          <div className="mt-14 grid w-full max-w-4xl gap-4 md:grid-cols-3">
+            {[
+              "Tư vấn theo nhu cầu sử dụng thực tế",
+              "Nhiều lựa chọn SIM, WiFi và internet tại nhà",
+              "Giới thiệu dễ hiểu, lịch sự và rõ ràng",
+            ].map((item) => (
+              <div key={item} className="rounded-[24px] border border-white/12 bg-white/8 px-5 py-4 text-sm font-medium text-[#fff1e5] shadow-[0_18px_40px_rgba(0,0,0,0.18)] backdrop-blur-xl">
+                {item}
+              </div>
+            ))}
           </div>
         </div>
       </section>

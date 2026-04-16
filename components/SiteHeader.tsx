@@ -80,12 +80,6 @@ export default function SiteHeader() {
 
         <div className="hidden items-center gap-3 lg:flex">
           <Link
-            href="/pricing"
-            className="rounded-full border border-[#f5d5bf]/70 bg-white/5 px-5 py-3 text-sm font-semibold text-[#fff1e5] transition hover:bg-white/12"
-          >
-            Pricing
-          </Link>
-          <Link
             href="/lien-he"
             className="relative overflow-hidden rounded-full bg-[linear-gradient(135deg,#ffd2b1,#f29a69)] px-5 py-3 text-sm font-semibold text-[#2b1623] shadow-[0_14px_32px_rgba(255,140,79,0.30)] transition hover:-translate-y-0.5"
           >
