@@ -26,12 +26,12 @@ export default function ContactPage() {
         secondaryLabel="Xem Sản phẩm"
         secondaryHref="/san-pham"
       />
-      <section className="bg-[#120913] text-white">
+      <section className="bg-[rgba(18,9,19,0.70)] text-white">
         <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 lg:px-10">
           <ContactCard />
         </div>
       </section>
-      <section className="bg-[#180b17] text-white">
+      <section className="bg-[rgba(24,11,23,0.68)] text-white">
         <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 lg:px-10">
           <SectionTitle eyebrow="Câu hỏi thường gặp" title="Giải đáp nhanh trước khi gửi form" desc="Một vài câu hỏi cuối cùng thường xuất hiện ngay trước lúc khách hàng quyết định có gửi form hay không." dark />
           <div className="mt-10">

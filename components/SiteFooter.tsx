@@ -7,7 +7,7 @@ import { navigation } from "@/data/navigation";
 
 export default function SiteFooter() {
   return (
-    <footer className="bg-[#140d17] text-white">
+    <footer className="bg-[rgba(20,13,23,0.74)] text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 md:grid-cols-[1.15fr_0.85fr_1fr] md:px-8 lg:px-10">
         <div>
           <LogoMark />

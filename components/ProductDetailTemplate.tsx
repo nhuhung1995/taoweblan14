@@ -47,7 +47,7 @@ export default function ProductDetailTemplate({
         secondaryLabel="Xem sản phẩm"
       />
 
-      <section className="bg-[#120913] text-white">
+      <section className="bg-[rgba(18,9,19,0.70)] text-white">
         <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 lg:px-10">
           <SectionTitle
             eyebrow="Lợi ích nổi bật"
@@ -57,7 +57,7 @@ export default function ProductDetailTemplate({
           />
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {benefits.map((item) => (
-              <div key={item.title} className="rounded-[30px] border border-white/10 bg-white/6 p-7 shadow-panel backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-[#ffbc92]/35">
+              <div key={item.title} className="rounded-[30px] border border-white/10 bg-white/[0.06] p-7 shadow-panel backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-[#ffbc92]/35">
                 <h3 className="text-2xl font-semibold text-[#fff1e6]">{item.title}</h3>
                 <p className="mt-3 leading-7 text-white/72">{item.text}</p>
               </div>
@@ -66,7 +66,7 @@ export default function ProductDetailTemplate({
         </div>
       </section>
 
-      <section className="bg-[#180b17] text-white">
+      <section className="bg-[rgba(24,11,23,0.68)] text-white">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-20 md:px-8 lg:grid-cols-[0.95fr_1.05fr] lg:px-10">
           <SectionTitle
             eyebrow="Phù hợp với ai"
@@ -76,16 +76,16 @@ export default function ProductDetailTemplate({
           />
           <div className="grid gap-4">
             {audience.map((item) => (
-              <div key={item} className="rounded-[24px] border border-white/10 bg-white/6 px-5 py-4 text-white/74 shadow-soft backdrop-blur">• {item}</div>
+              <div key={item} className="rounded-[24px] border border-white/10 bg-white/[0.06] px-5 py-4 text-white/74 shadow-soft backdrop-blur">• {item}</div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-[#120913] text-white">
+      <section className="bg-[rgba(18,9,19,0.70)] text-white">
         <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 lg:px-10">
           <SectionTitle eyebrow="Gợi ý lựa chọn" title={compareTitle} desc={compareText} dark />
-          <div className="mt-10 rounded-[36px] border border-white/10 bg-white/6 p-8 backdrop-blur-xl md:p-10">
+          <div className="mt-10 rounded-[36px] border border-white/10 bg-white/[0.06] p-8 backdrop-blur-xl md:p-10">
             <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
               <div>
                 <h3 className="text-3xl font-semibold md:text-4xl">Cần hỗ trợ chọn đúng phương án? Đội ngũ luôn sẵn sàng đồng hành cùng Quý khách.</h3>
@@ -95,14 +95,14 @@ export default function ProductDetailTemplate({
               </div>
               <div className="flex flex-wrap gap-4 lg:justify-end">
                 <Link href="/lien-he" className="rounded-full bg-[#ffe8d8] px-6 py-4 font-semibold text-[#2b1623]">Đi tới Liên hệ</Link>
-                <Link href="/san-pham" className="rounded-full border border-white/20 bg-white/8 px-6 py-4 font-semibold text-white">Quay về Sản phẩm</Link>
+                <Link href="/san-pham" className="rounded-full border border-white/20 bg-white/[0.08] px-6 py-4 font-semibold text-white">Quay về Sản phẩm</Link>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-[#180b17] text-white">
+      <section className="bg-[rgba(24,11,23,0.68)] text-white">
         <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 lg:px-10">
           <SectionTitle
             eyebrow="Câu hỏi thường gặp"

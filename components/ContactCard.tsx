@@ -22,7 +22,7 @@ export default function ContactCard() {
           {channels.map((channel) => {
             const Icon = channel.icon;
             return (
-              <div key={channel.title} className="rounded-[28px] border border-white/10 bg-white/6 px-5 py-5 shadow-panel backdrop-blur-xl">
+              <div key={channel.title} className="rounded-[28px] border border-white/10 bg-white/[0.06] px-5 py-5 shadow-panel backdrop-blur-xl">
                 <div className="flex items-start gap-4">
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#ffb77f]/14">
                     <Icon className="h-5 w-5 text-[#ffd7c0]" />
@@ -43,15 +43,15 @@ export default function ContactCard() {
         <div className="grid gap-5 md:grid-cols-2">
           <div>
             <label className="mb-2 block text-sm font-medium text-[#ffd7c0]">Họ và tên</label>
-            <input type="text" placeholder="Nguyễn Văn A" className="w-full rounded-2xl border border-white/10 bg-white/8 px-4 py-4 text-white outline-none transition placeholder:text-white/40 focus:border-[#d77c57]" />
+            <input type="text" placeholder="Nguyễn Văn A" className="w-full rounded-2xl border border-white/10 bg-white/[0.08] px-4 py-4 text-white outline-none transition placeholder:text-white/40 focus:border-[#d77c57]" />
           </div>
           <div>
             <label className="mb-2 block text-sm font-medium text-[#ffd7c0]">Số điện thoại / LINE</label>
-            <input type="text" placeholder="090xxxxxxx / LINE ID" className="w-full rounded-2xl border border-white/10 bg-white/8 px-4 py-4 text-white outline-none transition placeholder:text-white/40 focus:border-[#d77c57]" />
+            <input type="text" placeholder="090xxxxxxx / LINE ID" className="w-full rounded-2xl border border-white/10 bg-white/[0.08] px-4 py-4 text-white outline-none transition placeholder:text-white/40 focus:border-[#d77c57]" />
           </div>
           <div>
             <label className="mb-2 block text-sm font-medium text-[#ffd7c0]">Sản phẩm quan tâm</label>
-            <select className="w-full rounded-2xl border border-white/10 bg-white/8 px-4 py-4 text-white outline-none transition focus:border-[#d77c57]">
+            <select className="w-full rounded-2xl border border-white/10 bg-white/[0.08] px-4 py-4 text-white outline-none transition focus:border-[#d77c57]">
               <option>SIM vật lý</option>
               <option>eSIM</option>
               <option>Pocket WiFi</option>
@@ -62,7 +62,7 @@ export default function ContactCard() {
           </div>
           <div>
             <label className="mb-2 block text-sm font-medium text-[#ffd7c0]">Thời gian sử dụng</label>
-            <select className="w-full rounded-2xl border border-white/10 bg-white/8 px-4 py-4 text-white outline-none transition focus:border-[#d77c57]">
+            <select className="w-full rounded-2xl border border-white/10 bg-white/[0.08] px-4 py-4 text-white outline-none transition focus:border-[#d77c57]">
               <option>Ngắn ngày</option>
               <option>1 - 3 tháng</option>
               <option>3 - 12 tháng</option>
@@ -71,11 +71,11 @@ export default function ContactCard() {
           </div>
           <div className="md:col-span-2">
             <label className="mb-2 block text-sm font-medium text-[#ffd7c0]">Khu vực / nơi sử dụng</label>
-            <input type="text" placeholder="Ví dụ: Tokyo, Osaka, căn hộ một mình, gia đình 3 người..." className="w-full rounded-2xl border border-white/10 bg-white/8 px-4 py-4 text-white outline-none transition placeholder:text-white/40 focus:border-[#d77c57]" />
+            <input type="text" placeholder="Ví dụ: Tokyo, Osaka, căn hộ một mình, gia đình 3 người..." className="w-full rounded-2xl border border-white/10 bg-white/[0.08] px-4 py-4 text-white outline-none transition placeholder:text-white/40 focus:border-[#d77c57]" />
           </div>
           <div className="md:col-span-2">
             <label className="mb-2 block text-sm font-medium text-[#ffd7c0]">Ghi chú nhu cầu</label>
-            <textarea rows={5} placeholder="Ví dụ: cần vừa nghe gọi vừa data, dùng nhiều laptop trong nhà, muốn tư vấn giữa Home WiFi và Hikari..." className="w-full rounded-2xl border border-white/10 bg-white/8 px-4 py-4 text-white outline-none transition placeholder:text-white/40 focus:border-[#d77c57]" />
+            <textarea rows={5} placeholder="Ví dụ: cần vừa nghe gọi vừa data, dùng nhiều laptop trong nhà, muốn tư vấn giữa Home WiFi và Hikari..." className="w-full rounded-2xl border border-white/10 bg-white/[0.08] px-4 py-4 text-white outline-none transition placeholder:text-white/40 focus:border-[#d77c57]" />
           </div>
         </div>
         <button type="button" className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[linear-gradient(135deg,#ffd2b1,#f29a69)] px-6 py-4 font-semibold text-[#2b1623] transition hover:-translate-y-0.5">

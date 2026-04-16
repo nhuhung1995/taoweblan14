@@ -16,7 +16,7 @@ export default function ProductsPage() {
         panelBullets={["SIM vật lý", "eSIM", "Pocket WiFi", "Home WiFi", "Hikari"]}
         icon="global"
       />
-      <section className="bg-[#fff8f4]">
+      <section className="bg-[rgba(255,248,244,0.92)]">
         <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 lg:px-10">
           <SectionTitle eyebrow="Catalog" title="Toàn bộ nhóm dịch vụ" desc="Trang tổng hợp này giúp Quý khách nhìn nhanh toàn cảnh, sau đó đi tiếp tới từng trang chi tiết theo nhóm dịch vụ phù hợp nhất." />
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">

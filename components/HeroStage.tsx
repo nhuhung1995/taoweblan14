@@ -19,9 +19,9 @@ export default function HeroStage() {
             <IconBubble icon="global" large />
           </div>
           <div className="mt-6 grid gap-3 text-sm text-white/80">
-            <div className="rounded-2xl bg-white/8 px-4 py-3">SIM vật lý hoặc eSIM cho cá nhân.</div>
-            <div className="rounded-2xl bg-white/8 px-4 py-3">Pocket WiFi cho nhu cầu di chuyển nhiều thiết bị.</div>
-            <div className="rounded-2xl bg-white/8 px-4 py-3">Home WiFi và Hikari cho kết nối tại nhà.</div>
+            <div className="rounded-2xl bg-white/[0.08] px-4 py-3">SIM vật lý hoặc eSIM cho cá nhân.</div>
+            <div className="rounded-2xl bg-white/[0.08] px-4 py-3">Pocket WiFi cho nhu cầu di chuyển nhiều thiết bị.</div>
+            <div className="rounded-2xl bg-white/[0.08] px-4 py-3">Home WiFi và Hikari cho kết nối tại nhà.</div>
           </div>
         </div>
 
@@ -36,24 +36,24 @@ export default function HeroStage() {
             </div>
           </div>
           <div className="mt-6 grid grid-cols-2 gap-3 text-sm text-white/80">
-            <div className="rounded-2xl bg-white/8 px-4 py-4">Docomo / SoftBank / Rakuten</div>
-            <div className="rounded-2xl bg-white/8 px-4 py-4">Nghe gọi hoặc data</div>
-            <div className="rounded-2xl bg-white/8 px-4 py-4">Tại nhà nhanh gọn</div>
-            <div className="rounded-2xl bg-white/8 px-4 py-4">Ổn định lâu dài</div>
+            <div className="rounded-2xl bg-white/[0.08] px-4 py-4">Docomo / SoftBank / Rakuten</div>
+            <div className="rounded-2xl bg-white/[0.08] px-4 py-4">Nghe gọi hoặc data</div>
+            <div className="rounded-2xl bg-white/[0.08] px-4 py-4">Tại nhà nhanh gọn</div>
+            <div className="rounded-2xl bg-white/[0.08] px-4 py-4">Ổn định lâu dài</div>
           </div>
         </div>
 
         <div className="absolute bottom-3 left-1/2 w-[86%] -translate-x-1/2 rounded-[30px] border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.14),rgba(255,228,211,0.06))] px-5 py-5 backdrop-blur-xl shadow-panel">
           <div className="grid grid-cols-3 gap-3 text-center text-sm">
-            <div className="rounded-2xl bg-white/10 p-4 text-white/85">
+            <div className="rounded-2xl bg-white/[0.10] p-4 text-white/85">
               <div className="text-xs uppercase tracking-[0.24em] text-[#ffd5be]">Warm UI</div>
               <div className="mt-2 font-semibold">Mềm, sang, dễ đọc</div>
             </div>
-            <div className="rounded-2xl bg-white/10 p-4 text-white/85">
+            <div className="rounded-2xl bg-white/[0.10] p-4 text-white/85">
               <div className="text-xs uppercase tracking-[0.24em] text-[#ffd5be]">3D Motion</div>
               <div className="mt-2 font-semibold">Sâu và cuốn hút</div>
             </div>
-            <div className="rounded-2xl bg-white/10 p-4 text-white/85">
+            <div className="rounded-2xl bg-white/[0.10] p-4 text-white/85">
               <div className="text-xs uppercase tracking-[0.24em] text-[#ffd5be]">Conversion</div>
               <div className="mt-2 font-semibold">Hướng đến liên hệ</div>
             </div>

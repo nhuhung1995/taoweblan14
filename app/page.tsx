@@ -123,7 +123,7 @@ export default function HomePage() {
             </Link>
             <Link
               href="/san-pham"
-              className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-7 py-4 font-semibold text-white backdrop-blur transition hover:bg-white/16"
+              className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/[0.10] px-7 py-4 font-semibold text-white backdrop-blur transition hover:bg-white/[0.16]"
             >
               Xem sản phẩm
             </Link>
@@ -135,7 +135,7 @@ export default function HomePage() {
               "Nhiều lựa chọn SIM, WiFi và internet tại nhà",
               "Giới thiệu dễ hiểu, lịch sự và rõ ràng",
             ].map((item) => (
-              <div key={item} className="rounded-[24px] border border-white/12 bg-white/8 px-5 py-4 text-sm font-medium text-[#fff1e5] shadow-[0_18px_40px_rgba(0,0,0,0.18)] backdrop-blur-xl">
+              <div key={item} className="rounded-[24px] border border-white/12 bg-white/[0.08] px-5 py-4 text-sm font-medium text-[#fff1e5] shadow-[0_18px_40px_rgba(0,0,0,0.18)] backdrop-blur-xl">
                 {item}
               </div>
             ))}
@@ -143,7 +143,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-[#170914] text-white">
+      <section className="relative overflow-hidden bg-[rgba(23,9,20,0.68)] text-white">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(255,162,92,0.08),transparent_18%),radial-gradient(circle_at_84%_20%,rgba(255,96,76,0.08),transparent_18%)]" />
         <div className="relative mx-auto max-w-7xl px-4 py-16 md:px-8 lg:px-10">
           <SectionTitle
@@ -167,7 +167,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-[#1b0d1a] text-white">
+      <section className="relative overflow-hidden bg-[rgba(27,13,26,0.68)] text-white">
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.02),transparent_28%),radial-gradient(circle_at_16%_0%,rgba(255,174,100,0.12),transparent_18%),radial-gradient(circle_at_84%_10%,rgba(205,81,119,0.14),transparent_20%)]" />
         <div className="relative mx-auto max-w-7xl px-4 py-20 md:px-8 lg:px-10">
           <SectionTitle
@@ -197,7 +197,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-[#f7eee6] text-[#2b1623]">
+      <section className="bg-[rgba(247,238,230,0.92)] text-[#2b1623]">
         <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 lg:px-10">
           <SectionTitle
             eyebrow="Tại sao chọn chúng tôi"
@@ -222,7 +222,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-[#180b17] text-white">
+      <section className="relative overflow-hidden bg-[rgba(24,11,23,0.68)] text-white">
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.02),transparent_28%),radial-gradient(circle_at_30%_0%,rgba(255,155,88,0.12),transparent_18%),radial-gradient(circle_at_80%_70%,rgba(191,74,124,0.12),transparent_22%)]" />
         <div className="relative mx-auto max-w-7xl px-4 py-20 md:px-8 lg:px-10">
           <SectionTitle
@@ -244,7 +244,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-[#120913] text-white">
+      <section className="relative overflow-hidden bg-[rgba(18,9,19,0.70)] text-white">
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.02),transparent_30%),radial-gradient(circle_at_78%_78%,rgba(255,166,105,0.12),transparent_20%),radial-gradient(circle_at_18%_12%,rgba(215,91,128,0.10),transparent_18%)]" />
         <div className="relative mx-auto max-w-7xl px-4 py-20 md:px-8 lg:px-10">
           <SectionTitle
@@ -267,7 +267,7 @@ export default function HomePage() {
                       <div className="text-sm text-white/58">{item.role}</div>
                     </div>
                   </div>
-                  <div className="mt-5 flex h-10 w-10 items-center justify-center rounded-2xl bg-white/10 text-[#ffd7c0]">
+                  <div className="mt-5 flex h-10 w-10 items-center justify-center rounded-2xl bg-white/[0.10] text-[#ffd7c0]">
                     <Quote className="h-4 w-4" />
                   </div>
                   <p className="mt-4 leading-7 text-white/74">“{item.quote}”</p>
@@ -281,7 +281,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-[#f7eee6] text-[#2b1623]">
+      <section className="bg-[rgba(247,238,230,0.92)] text-[#2b1623]">
         <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 lg:px-10">
           <SectionTitle
             eyebrow="Câu hỏi thường gặp"
@@ -295,13 +295,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-[#140914] text-white">
+      <section className="relative overflow-hidden bg-[rgba(20,9,20,0.68)] text-white">
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.02),transparent_30%),radial-gradient(circle_at_20%_20%,rgba(255,164,92,0.12),transparent_18%),radial-gradient(circle_at_80%_20%,rgba(210,82,121,0.12),transparent_18%)]" />
         <div className="relative mx-auto max-w-7xl px-4 py-20 md:px-8 lg:px-10">
           <div className="rounded-[38px] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.10),rgba(255,228,211,0.05))] px-8 py-10 shadow-[0_28px_80px_rgba(22,8,16,0.32)] backdrop-blur-2xl md:px-10 md:py-12">
             <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
               <div>
-                <div className="inline-flex rounded-full border border-white/12 bg-white/8 px-4 py-2 text-sm text-[#ffd7c0]">Liên hệ tư vấn</div>
+                <div className="inline-flex rounded-full border border-white/12 bg-white/[0.08] px-4 py-2 text-sm text-[#ffd7c0]">Liên hệ tư vấn</div>
                 <h2 className="mt-5 text-4xl font-semibold leading-tight md:text-5xl text-[#fff2e8]">
                   Quý khách cần một gợi ý phù hợp, rõ ràng và dễ bắt đầu tại Nhật?
                 </h2>
@@ -319,7 +319,7 @@ export default function HomePage() {
                 </Link>
                 <Link
                   href="/san-pham"
-                  className="rounded-full border border-white/20 bg-white/8 px-7 py-4 font-semibold text-white transition hover:bg-white/14"
+                  className="rounded-full border border-white/20 bg-white/[0.08] px-7 py-4 font-semibold text-white transition hover:bg-white/14"
                 >
                   Xem sản phẩm
                 </Link>

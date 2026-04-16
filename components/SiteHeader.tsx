@@ -35,7 +35,7 @@ export default function SiteHeader() {
                     className={`inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-sm font-semibold transition ${
                       active
                         ? "bg-[#fff3ea] text-[#341723] shadow-[0_10px_30px_rgba(0,0,0,0.18)]"
-                        : "text-[#fff1e5] hover:bg-white/10 hover:text-white"
+                        : "text-[#fff1e5] hover:bg-white/[0.10] hover:text-white"
                     }`}
                   >
                     {item.label}
@@ -48,7 +48,7 @@ export default function SiteHeader() {
                           <Link
                             key={child.href}
                             href={child.href}
-                            className="rounded-[22px] border border-transparent px-4 py-4 transition hover:border-white/10 hover:bg-white/8"
+                            className="rounded-[22px] border border-transparent px-4 py-4 transition hover:border-white/10 hover:bg-white/[0.08]"
                           >
                             <div className="font-semibold text-[#fff4eb]">{child.label}</div>
                             <div className="mt-1 text-sm leading-6 text-[#ffe2d1]/82">{child.description}</div>
@@ -69,7 +69,7 @@ export default function SiteHeader() {
                 className={`rounded-full px-4 py-2.5 text-sm font-semibold transition ${
                   active
                     ? "bg-[#fff3ea] text-[#341723] shadow-[0_10px_30px_rgba(0,0,0,0.18)]"
-                    : "text-[#fff1e5] hover:bg-white/10 hover:text-white"
+                    : "text-[#fff1e5] hover:bg-white/[0.10] hover:text-white"
                 }`}
               >
                 {item.label}
@@ -90,7 +90,7 @@ export default function SiteHeader() {
 
         <button
           onClick={() => setMobileOpen((v) => !v)}
-          className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/12 bg-white/8 text-[#fff0e3] lg:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/12 bg-white/[0.08] text-[#fff0e3] lg:hidden"
         >
           {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
